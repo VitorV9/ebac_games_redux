@@ -19,7 +19,7 @@ function App() {
   const [carrinho, setCarrinho] = useState<Game[]>([])
 
   useEffect(() => {
-    fetch('http://localhost:4000/produtos')
+    fetch('http://localhost:3000/produtos')
       .then((res) => res.json())
       .then((res) => setGames(res))
   }, [])
